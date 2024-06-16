@@ -16,8 +16,7 @@ app.get("/search/:query", async (req, res) => {
         method: "GET",
         headers: {
           accept: "application/json",
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NmEyMDNlYjUxODQ1NmI2N2UwNGNkNjNlZmVmYjc3YyIsInN1YiI6IjY2NmRmYWU0MzhkYTBjNGI3NDBmOGUzNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.o8RfxPhJ2o_4gjUJgU1nq-6uentTvSV1wZnbxfpzc34",
+          Authorization: process.env.AUTHORIZATION,
         },
       }
     );
